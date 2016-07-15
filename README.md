@@ -26,7 +26,7 @@ Currently, all apps are deployed to [Heroku](https://heroku.com). Vendors will b
 
 - [Heroku PHP Docs](https://devcenter.heroku.com/categories/php)
 - [Heroku Ruby Docs](https://devcenter.heroku.com/categories/ruby)
-- As an app's security needs necessitate, apps will be deployed within a [Heroku Private Space](https://www.heroku.com/private-spaces)
+- As an app's security needs require, apps will be deployed within a [Heroku Private Space](https://www.heroku.com/private-spaces)
 
 **Webservers**
 
@@ -62,4 +62,4 @@ Currently, all apps are deployed to [Heroku](https://heroku.com). Vendors will b
 
 **Git Repository Hosting**
 
-- Github for all app code, including 3rd party packages/gems
+- Github should be used for all app code, including 3rd party packages
