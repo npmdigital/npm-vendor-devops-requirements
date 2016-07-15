@@ -63,3 +63,7 @@ Currently, all apps are deployed to [Heroku](https://heroku.com). Vendors will b
 **Git Repository Hosting**
 
 - Github should be used for all app code, including 3rd party packages
+
+### Questions of Concerns?
+
+Feel free to reach out in the #devops channel on NPM Digitla's Slack.
