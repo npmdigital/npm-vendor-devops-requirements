@@ -66,4 +66,4 @@ Currently, all apps are deployed to [Heroku](https://heroku.com). Vendors will b
 
 ### Questions of Concerns?
 
-Feel free to reach out in the #devops channel on NPM Digitla's Slack.
+Feel free to reach out in the #devops Slack channel.
