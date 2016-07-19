@@ -2,19 +2,45 @@ NPM Vendor DevOps Interview
 ===========================
 
 - Are you familiar with the mantra "Convention over Configuration?" If so, describe it. When is it applicable?
+    - **ANSWER**: "... is a software design paradigm that attempts to decrease the number of decisions that a developer is required to make without necessarily losing flexibility"
 - Are you familiar with [12 Factor Apps](http://12factor.net/)? If so, describe the benefits they offer.
+    - **ANSWER**: The twelve-factor app is a methodology for building software-as-a-service apps that:
+        - Use declarative formats for setup automation, to minimize time and cost for new developers joining the project;
+        - Have a clean contract with the underlying operating system, offering maximum portability between execution environments;
+        - Are suitable for deployment on modern cloud platforms, obviating the need for servers and systems administration;
+        - Minimize divergence between development and production, enabling continuous deployment for maximum agility;
+        - And can scale up without significant changes to tooling, architecture, or development practices.
 - Have you worked with Heroku in the past? If so, describe the apps you've deployed.
     - What was the tech stack?
+        - **ANSWER**: hopefully PHP and Ruby
     - Did the app use dynos and workers? How many of each?
+        - **ANSWER**: this will give us an idea of their familiarity with scaling and background jobs
     - What addons were utilized?
+        - **ANSWER**: we're looking for things like Papertrail, New Relic, DB Backups, Redis, etc.
     - How did you monitor app health?
+        - **ANSWER**: something like New Relic
 - What's a CDN?
+    - **ANSWER**: Content Delivery Network. Used to distribute the loading of static assets, thereby lessening the demand on the app server. Also allows for delivering assets from a server geographically closer to the end user, thereby decreasing perceived load time.
 - Do you have experience with cloud storage? If so, describe the services you've used.
+    - **ANSWER**: we're looking Amazon S3, Cloudflare, Rackspace Cloudfiles, or similar
 - What's the difference between a Relational Database, like MySQL, and a NoSQL Database like Redis? When would you use each?
+    - **ANSWER**: we're looking for discussion about...
+        - Schema vs Schemaless and types of data
+        - Relating data, indexes, query performance
+        - Use cases like domain models, caching, sessions, "hot" data
 - What's the difference between UTF8 and UTF8-MB4 encoding? What considerations does UTF8-MB4 support in MySQL 5.7 raise?
+    - **ANSWER**: UTF8-MB4 provides support for additional special chars like emoji. Because of the increase in supported chars, a MySQL varchar can no longer be 255 in length.
 - What is an acceptable level of failing tests for a deployment to go into production?
+    - **ANSWER**: 0, unless they've got a different answer that is just really awesome.
 - What Continuous Integration/Delivery systems or services have you use in the past?
+    - **ANSWER**: we're looking for Codeship, Jenkins, or similar
 - Are you familiar with SRE (Site Reliability Engineering)? If so, describe it and your experience.
+    - **ANSWER**: "SRE is what you get when you treat operations as if it’s a software problem." [SRE @ Google](https://landing.google.com/sre/)
 - What's the difference between an Apache Rewrite and Alias? When is it appropriate to use each?
+    - **ANSWER**:
+        - Rewrite: redirects a requested url to a different url - acceptable to use often, but not frivilously
+        - Alias: redirects a requested url to a system folder outside of the document root - should be used very rarely, and never to point a URI to a completely different application. Applications should reside at their own URL, eg. a subdomain `other-app.example.com`
 - What is the main performance difference(s) between Apache and Nginx?
+    - **ANSWER**: Nginx is not necessarily faster than Apache, however it requires *way* less system resources
 - How do you maintain parody between development, test, staging, and production environments?
+    - **ANSWER**: we're looking Vagrant/Virtualbox, rbenv, rvm, php-version, or similar
